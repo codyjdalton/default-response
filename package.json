@@ -1,5 +1,5 @@
 {
-  "name": "npm-default-response",
+  "name": "default-response",
   "version": "0.0.1",
   "description": "Get a default RESTful response body",
   "main": "lib/npm-default-response.js",
