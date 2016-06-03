@@ -1,0 +1,346 @@
+{
+  "100": {
+    "status": "100",
+    "message": "Continue",
+    "developerMessage": "The server has received the request headers and the client should proceed to send the request body."
+  },
+  "101": {
+    "status": "101",
+    "message": "Switching protocols",
+    "developerMessage": "The client has asked the server to switch protocols and the server has agreed to do so."
+  },
+  "102": {
+    "status": "102",
+    "message": "Processing",
+    "developerMessage": "The server has received and is processing the request, but no response is available yet."
+  },
+  "200": {
+    "status": "200",
+    "message": "OK",
+    "developerMessage": "The request has been fulfilled."
+  },
+  "201": {
+    "status": "201",
+    "message": "Created",
+    "developerMessage": "The request has been fulfilled, resulting in the creation of a new resource."
+  },
+  "202": {
+    "status": "202",
+    "message": "Accepted",
+    "developerMessage": "The request has been accepted for processing, but the processing has not been completed."
+  },
+  "203": {
+    "status": "203",
+    "message": "Non-Authoritative information",
+    "developerMessage": "The server received a 200 OK from its origin, but is returning a modified version of the origin's response."
+  },
+  "204": {
+    "status": "204",
+    "message": "No Content",
+    "developerMessage": "The server successfully processed the request and is not returning any content."
+  },
+  "205": {
+    "status": "205",
+    "message": "Reset Content",
+    "developerMessage": "The server successfully processed the request and the content should be reset."
+  },
+  "206": {
+    "status": "206",
+    "message": "Partial Content",
+    "developerMessage": "The server is delivering only part of the resource due to a range header sent by the client."
+  },
+  "207": {
+    "status": "207",
+    "message": "Multi-Status",
+    "developerMessage": "The message body is an XML message and can contain a number of separate response codes, depending on how many sub-requests were made."
+  },
+  "208": {
+    "status": "208",
+    "message": "Already reported",
+    "developerMessage": "The members of a DAV binding have already been enumerated in a previous reply to this request, and are not being included again."
+  },
+  "226": {
+    "status": "226",
+    "message": "IM Used",
+    "developerMessage": "The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance."
+  },
+  "300": {
+    "status": "300",
+    "message": "Multiple choices",
+    "developerMessage": "Multiple options for the resource are available from which the client may choose"
+  },
+  "301": {
+    "status": "301",
+    "message": "Moved permanently",
+    "developerMessage": "This and all future requests should be directed to the given URI"
+  },
+  "302": {
+    "status": "302",
+    "message": "Found",
+    "developerMessage": "The response to the request can be found under another URI using a GET method."
+  },
+  "303": {
+    "status": "303",
+    "message": "See other",
+    "developerMessage": "The response to the request can be found under another URI using a GET method."
+  },
+  "304": {
+    "status": "304",
+    "message": "Not modified",
+    "developerMessage": "The resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match."
+  },
+  "305": {
+    "status": "305",
+    "message": "Use proxy",
+    "developerMessage": "The requested resource is available only through a proxy."
+  },
+  "306": {
+    "status": "306",
+    "message": "Switch proxy",
+    "developerMessage": "Subsequent requests should use the specified proxy."
+  },
+  "307": {
+    "status": "307",
+    "message": "Temporary redirect",
+    "developerMessage": "the request should be repeated with another URI; however, future requests should still use the original URI."
+  },
+  "308": {
+    "status": "308",
+    "message": "Permanent redirect",
+    "developerMessage": "The request and all future requests should be repeated using another URI."
+  },
+  "400": {
+    "status": "400",
+    "message": "Bad request",
+    "developerMessage": "The server cannot or will not process the request due to an apparent client error.",
+    "error": "ClientError"
+  },
+  "401": {
+    "status": "401",
+    "message": "Unauthorized",
+    "developerMessage": "Authentication is required and has failed or has not yet been provided.",
+    "error": "ClientError"
+  },
+  "402": {
+    "status": "402",
+    "message": "Payment required",
+    "developerMessage": "Payment is required or the client has exceeded the request threshold.",
+    "error": "ClientError"
+  },
+  "403": {
+    "status": "403",
+    "message": "Forbidden",
+    "developerMessage": "The request was a valid request, but the server is refusing to respond to it.",
+    "error": "ClientError"
+  },
+  "404": {
+    "status": "404",
+    "message": "Not found",
+    "developerMessage": "The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.",
+    "error": "ClientError"
+  },
+  "405": {
+    "status": "405",
+    "message": "Method not allowed",
+    "developerMessage": "The request method is not supported for the requested resource.",
+    "error": "ClientError"
+  },
+  "406": {
+    "status": "406",
+    "message": "Not acceptable",
+    "developerMessage": "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.",
+    "error": "ClientError"
+  },
+  "407": {
+    "status": "407",
+    "message": "Proxy authentication required",
+    "developerMessage": "The client must first authenticate itself with the proxy.",
+    "error": "ClientError"
+  },
+  "408": {
+    "status": "408",
+    "message": "Request timeout",
+    "developerMessage": "The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.",
+    "error": "ClientError"
+  },
+  "409": {
+    "status": "409",
+    "message": "Conflict",
+    "developerMessage": "The request could not be processed because of conflict in the request.",
+    "error": "ClientError"
+  },
+  "410": {
+    "status": "410",
+    "message": "Gone",
+    "developerMessage": "the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices.",
+    "error": "ClientError"
+  },
+  "411": {
+    "status": "411",
+    "message": "Length required",
+    "developerMessage": "The request did not specify the length of its content, which is required by the requested resource.",
+    "error": "ClientError"
+  },
+  "412": {
+    "status": "412",
+    "message": "Precondition failed",
+    "developerMessage": "The server does not meet one of the preconditions that the requester put on the request.",
+    "error": "ClientError"
+  },
+  "413": {
+    "status": "413",
+    "message": "Payload too large",
+    "developerMessage": "The request is larger than the server is willing or able to process.",
+    "error": "ClientError"
+  },
+  "414": {
+    "status": "414",
+    "message": "URI too long",
+    "developerMessage": "The URI provided was too long for the server to process.",
+    "error": "ClientError"
+  },
+  "415": {
+    "status": "415",
+    "message": "Unsupported media type",
+    "developerMessage": "The request entity has a media type which the server or resource does not support.",
+    "error": "ClientError"
+  },
+  "416": {
+    "status": "416",
+    "message": "Range not satisfiable",
+    "developerMessage": "The client has asked for a portion of the file, but the server cannot supply that portion.",
+    "error": "ClientError"
+  },
+  "417": {
+    "status": "417",
+    "message": "Expectation failed",
+    "developerMessage": "The server cannot meet the requirements of the Expect request-header field.",
+    "error": "ClientError"
+  },
+  "418": {
+    "status": "418",
+    "message": "I'm a teapot",
+    "developerMessage": "Brewing coffee is not my specialty.",
+    "error": "ClientError"
+  },
+  "421": {
+    "status": "421",
+    "message": "Misdirected request",
+    "developerMessage": "The request was directed at a server that is not able to produce a response.",
+    "error": "ClientError"
+  },
+  "422": {
+    "status": "422",
+    "message": "Unprocessable entity",
+    "developerMessage": "The request was well-formed but was unable to be followed due to semantic errors.",
+    "error": "ClientError"
+  },
+  "423": {
+    "status": "423",
+    "message": "Locked",
+    "developerMessage": "The resource that is being accessed is locked.",
+    "error": "ClientError"
+  },
+  "424": {
+    "status": "424",
+    "message": "Failed dependency",
+    "developerMessage": "The request failed due to failure of a previous request.",
+    "error": "ClientError"
+  },
+  "426": {
+    "status": "426",
+    "message": "Upgrade required",
+    "developerMessage": "The client should switch to a different protocol.",
+    "error": "ClientError"
+  },
+  "428": {
+    "status": "428",
+    "message": "Precondition required",
+    "developerMessage": "The origin server requires the request to be conditional.",
+    "error": "ClientError"
+  },
+  "429": {
+    "status": "429",
+    "message": "Too many requests",
+    "developerMessage": "The client has sent too many requests in a given amount of time.",
+    "error": "ClientError"
+  },
+  "431": {
+    "status": "431",
+    "message": "Request header fields too large",
+    "developerMessage": "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.",
+    "error": "ClientError"
+  },
+  "451": {
+    "status": "451",
+    "message": "Not available for legal reasons",
+    "developerMessage": "The server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource.",
+    "error": "ClientError"
+  },
+  "500": {
+    "status": "500",
+    "message": "Internal server error",
+    "developerMessage": "The server encountered an unknown error.",
+    "error": "ServerError"
+  },
+  "501": {
+    "status": "501",
+    "message": "Not implemented",
+    "developerMessage": "The request method is not yet supported.",
+    "error": "ServerError"
+  },
+  "502": {
+    "status": "502",
+    "message": "Bad gateway",
+    "developerMessage": "The server was acting as a gateway and received an invalid response from the upstream server.",
+    "error": "ServerError"
+  },
+  "503": {
+    "status": "503",
+    "message": "Service unavailable",
+    "developerMessage": "The server is currently unavailable.",
+    "error": "ServerError"
+  },
+  "504": {
+    "status": "504",
+    "message": "Gateway timeout",
+    "developerMessage": "The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.",
+    "error": "ServerError"
+  },
+  "505": {
+    "status": "505",
+    "message": "HTTP version not supported",
+    "developerMessage": "The server does not support the HTTP protocol version used in the request.",
+    "error": "ServerError"
+  },
+  "506": {
+    "status": "506",
+    "message": "Variant also negotiates",
+    "developerMessage": "Transparent content negotiation for the request resulted in a circular reference.",
+    "error": "ServerError"
+  },
+  "507": {
+    "status": "507",
+    "message": "Insufficient storage",
+    "developerMessage": "The server is unable to store the representation needed to complete the request.",
+    "error": "ServerError"
+  },
+  "508": {
+    "status": "508",
+    "message": "Loop detected",
+    "developerMessage": "The server detected an infinite loop while processing the request.",
+    "error": "ServerError"
+  },
+  "510": {
+    "status": "510",
+    "message": "Not extended",
+    "developerMessage": "Further extensions to the request are required for the server to fulfill it.",
+    "error": "ServerError"
+  },
+  "511": {
+    "status": "511",
+    "message": "Network authentication required",
+    "developerMessage": "The client needs to authenticate to gain network access.",
+    "error": "ServerError"
+  }
+}

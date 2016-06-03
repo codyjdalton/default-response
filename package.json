@@ -1,0 +1,17 @@
+{
+  "name": "npm-default-response",
+  "version": "0.0.1",
+  "description": "Get a default RESTful response body",
+  "main": "lib/npm-default-response.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "Cody Dalton <codyjdalton@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {}
+}
