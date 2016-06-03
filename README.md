@@ -1,6 +1,6 @@
 # Default Response
 
-Simple developer message module for use with RESTful APIs.
+Simple API "default message" module for use with RESTful APIs.
 
 ## Installation
 ```{r, engine='shell'}
