@@ -10,7 +10,7 @@ npm install default-response --save
 ## Usage
 ```javascript
 // include default response
-var defaultResponse = require('default-response);
+var defaultResponse = require('default-response');
 
 // set a status
 console.log(defaultResponse.status(404));
