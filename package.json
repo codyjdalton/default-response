@@ -1,6 +1,6 @@
 {
   "name": "default-response",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Get a default RESTful response body",
   "main": "lib/npm-default-response.js",
   "engines": {
