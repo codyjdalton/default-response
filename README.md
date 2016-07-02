@@ -4,16 +4,16 @@ Simple API "default message" module for use with RESTful APIs.
 
 ## Installation
 ```{r, engine='shell'}
-npm install default-response --save
+$ npm install default-response --save
 ```
 
 ## Usage
 ```javascript
 // include default response
-var defaultResponse = require('default-response');
+var response = require('default-response');
 
 // set a status
-console.log(defaultResponse.status(404));
+console.log(response.status(404));
 
 /*
 Returns:
