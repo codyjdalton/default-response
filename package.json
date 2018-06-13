@@ -1,19 +1,48 @@
 {
   "name": "default-response",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get a default RESTful response body",
-  "main": "lib/npm-default-response.js",
-  "engines": {
-    "node": ">=4.0.0"
+  "main": "lib/default-response.module.js",
+  "scripts": {
+    "test": "nyc mocha"
   },
-  "scripts": {},
   "keywords": [],
-  "author": "Cody Dalton <codyjdalton@gmail.com>",
+  "author": "Cody Dalton <codydevbox@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codyjdalton/default-response.git"
+    "url": "git+https://github.com/codyjdalton/default-response.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "nyc": "*"
+  },
+  "nyc": {
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      "./node_modules"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "lcov"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "sourceMap": true,
+    "instrument": true
+  },
   "dependencies": {}
 }
